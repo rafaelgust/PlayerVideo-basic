@@ -48,16 +48,16 @@ div.controllers div.button{
 }
 
 #play{
-    background-image: url(/src/img/play.png);
+    background-image: url(src/img/play.png);
 }
 #stop{
-    background-image: url(/src/img/stop.png);
+    background-image: url(src/img/stop.png);
 }
 #go{
-    background-image: url(/src/img/go.png);
+    background-image: url(src/img/go.png);
 }
 #back{
-    background-image: url(/src/img/back.png);
+    background-image: url(src/img/back.png);
 }
 
 div.moreControllers{
