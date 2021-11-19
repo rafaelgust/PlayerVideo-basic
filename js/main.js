@@ -32,3 +32,26 @@ goP.onclick = function(){
 backP.onclick = function(){
     video.currentTime -= 15; //tempo atual - 15 seg
 };
+
+//more
+
+const maisvolume = document.querySelector('input[value="Aumentar Volume"]');
+const menosvolume = document.querySelector('input[value="Reduzir Volume"]');
+const mutar = document.querySelector('input[value="Mutar"]');
+const desmutar = document.querySelector('input[value="Desmutar"]');
+
+maisvolume.addEventListener('click', function(){
+    video.volume += 0.1;
+});
+
+menosvolume.addEventListener('click', function(){
+    video.volume -= 0.1;
+});
+
+mutar.addEventListener('click', function(){
+    video.volume = 0.0;
+});
+
+desmutar.addEventListener('click', function(){
+    video.volume = 0.1;
+});
