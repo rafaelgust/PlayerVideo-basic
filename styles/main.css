@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+div.container{
+    position: relative;
+    width: 500px;
+    height: 280px;
+    margin: 10px auto;
+}
+
+div.container video{
+    width: 100%;
+}
+
+div.container div.controllers{
+    position: absolute;
+    top: 100%;
+    transform: translateY(-100%);
+    width: 100%;
+    height: 50px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: rgba(170, 170, 170, 0.123);
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+div.controllers:hover{
+    background-color: rgba(170, 170, 170, 0.699);
+}
+
+div.controllers div.button{
+    width: 40px;
+    height: 40px;
+    margin: auto 5px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#play{
+    background-image: url(/src/img/play.png);
+}
+#stop{
+    background-image: url(/src/img/stop.png);
+}
+#go{
+    background-image: url(/src/img/go.png);
+}
+#back{
+    background-image: url(/src/img/back.png);
+}
+
