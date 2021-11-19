@@ -1,3 +1,5 @@
 # Basic Player HTML JS CSS
-## video e controladores
- 
+## Video e controladores de video
+
+![Screenshot](img.png)
+

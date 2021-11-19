@@ -53,5 +53,23 @@ mutar.addEventListener('click', function(){
 });
 
 desmutar.addEventListener('click', function(){
-    video.volume = 0.1;
+    video.volume = 0.5;
+});
+
+//more
+
+const maisVelocidade = document.querySelector('input[value="Aumentar Velocidade"]');
+const menosVelocidade = document.querySelector('input[value="Reduzir Velocidade"]');
+const resturarVelocidade = document.querySelector('input[value="Restaurar Velocidade"]');
+
+maisVelocidade.addEventListener('click', function(){
+    video.playbackRate += 0.1;
+});
+
+menosVelocidade.addEventListener('click', function(){
+    video.playbackRate -= 0.1;
+});
+
+resturarVelocidade.addEventListener('click', function(){
+    video.playbackRate = 1.0;
 });
